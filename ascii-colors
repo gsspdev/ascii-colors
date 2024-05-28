@@ -1,0 +1,20 @@
+#!/bin/bash
+
+black=0
+red=1
+green=2
+yellow=3
+blue=4
+magenta=5
+cyan=6
+white=7
+
+echo "choose what to effect with first digit(s):"
+echo -e "3 - background, 4 -foreground\n"
+
+echo "choose color with end digit"
+echo -e "\033[30mblack=$black\n\033[31mred=$red\n\033[32mgreen=$green\n\033[33myellow=$yellow\n\033[34mblue=$blue\n\033[35mmagenta=$magenta\n\033[36mcyan=$cyan\n\033[37mwhite=$white\n\033[0m"
+echo -e "\033[40mblack=$black\n\033[41mred=$red\n\033[42mgreen=$green\n\033[43myellow=$yellow\n\033[44mblue=$blue\n\033[45mmagenta=$magenta\n\033[46mcyan=$cyan\n\033[47mwhite=$white\n\033[0m"
+
+echo "for bright colors use"
+echo -e "90-97 - \033[94mbright foreground\033[0m\n100-107 - \033[104mbright background\033[0m"
